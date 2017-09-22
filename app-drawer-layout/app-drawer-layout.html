@@ -167,6 +167,10 @@ a shadow root):
       #contentContainer[drawer-position=right] {
         margin-right: var(--app-drawer-width, 256px);
       }
+
+      :host #contentContainer[drawer-position] {
+        @apply --content-container-theme;
+      }
     </style>
 
     <slot id="drawerSlot" name="drawer"></slot>
